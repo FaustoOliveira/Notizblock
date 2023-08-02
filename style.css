@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    background-color: #0c0c0e;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family:'Roboto', sans-serif;
+    color: white;
+    padding-bottom: 24px;
+    top: 32px;
+    font-size: 50px;
+}
+
+.bg1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 60vw;
+    color: white;
+    top: 115px;
+}
+
+.card {
+    margin-bottom: 32px;
+    max-width: 128px;
+}
+
+b {
+    font-size: 22px;
+}
+
+.inputfield {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b38bff;
+    width: 28rem;
+    height: 200px;
+    border-radius: 4px;
+    margin-left: 36px;
+    margin-right: 36px;
+    margin-bottom: 40px;
+    overflow: scroll;
+    box-shadow: -20px 20px 10px 0px rgba(0, 0, 0, 0.4)
+}
+
+p {
+    display: flex;
+    text-align: center;
+}
+
+input {
+    display: flex;
+    border-radius: 4px;
+    border: unset;
+    margin-top: 16px;
+    width: 25rem;
+}
+
+#inputTitle {
+    text-decoration: underline;
+}
+
+#note {
+    height: 7rem;
+}
+
+#title {
+    height: 2rem;
+}
+
+button {
+    position: relative;
+    margin-left: 20rem;
+    margin-top: 9rem;
+}
+
+.saveBtn {
+    position: relative;
+    margin-top: -7%;
+    margin-left: 80%;
+    height: 18px;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    position: absolute;
+    z-index: 1;
+    margin-top: 10.5rem;
+    margin-left: 13rem;
+    height: 24px;
+    cursor: pointer;
+}
+
+.inputfield::-webkit-scrollbar {
+    display: none;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    border-radius: 4px;
+    margin-bottom: 75px;
+    margin-left: 12px;
+    margin-right: 12px;
+    box-shadow: -20px 20px 10px 0px rgba(0, 0, 0, 0.4)
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button-color1 {
+    background-color: #b38bff;
+}
+
+.button-color2 {
+    background-color: #fe9e9f;
+}
+
+.button-color3 {
+    background-color: #92f48f;
+}
+
+.button-color4 {
+    background-color: orange;
+}
+
+.button-color5 {
+    background-color: #f4f5d5;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop-down-menu {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .inputfield {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .bg1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar {
+        display: flex;
+        align-items: center;
+    }
+    .button {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    input {
+        width: 90%;
+    }
+}
+
+@media (max-width: 750px) {
+    h1 {
+        font-size: xx-large;
+    }
+    .drop-down-menu {
+        display: flex;
+        position: absolute;
+        right: 16px;
+        top: 31px;
+        width: 24px;
+        cursor: pointer;
+    }
+    .menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        right: 0;
+        top: 0;
+    }
+    .nav-bar {
+        display: flex;
+        position: absolute;
+        top: 115px;
+        z-index: 2;
+        background-color: #1f1d2c;
+        width: 100vw;
+        height: 100vh;
+        transform: translateX(751px);
+        transition: all 225ms ease-in-out;
+    }
+    .inputfield {
+        min-width: 16rem;
+        max-width: 16rem;
+        overflow: scroll;
+    }
+    .show-overlay-menu {
+        transform: translateX(0);
+        flex-direction: column;
+    }
+    .hide-menu {
+        display: none;
+    }
+    body {
+        overflow-x: hidden !important;
+    }
+    .button {
+        margin-bottom: 24px;
+    }
+    .saveBtn {
+        position: absolute;
+        margin-left: 6.2rem;
+        margin-top: 9.5rem;
+    }
+    .deleteBtn {
+        position: absolute;
+        margin-left: 7rem;
+    }
+    #content {
+        padding-top: 16px;
+    }
+}
